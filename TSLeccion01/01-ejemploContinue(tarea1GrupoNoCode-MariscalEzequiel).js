@@ -9,3 +9,5 @@ for (let i = 0; i < arrayMediaRara.length; i++) { //recorro la array
   
   console.log("Se han encontrado 3 campeones del mundo "(recorriendoElemento));
 }
+
+//Ezequiel Mariscal
