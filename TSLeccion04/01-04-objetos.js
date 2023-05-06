@@ -1,6 +1,8 @@
 // Var primitiva
 let x = 10; 
 console.log(x.length);
+// Pongo unos log para diferenciar en consola lo q vemos
+console.log('Tipos primitivos');
 
 // Object
 let persona = {
@@ -25,6 +27,9 @@ console.log(persona); // aca accedo a todo
 
 console.log(persona.nombreCompleto()); // Carlos Gil
 
+// Pongo unos log para diferenciar en consola lo q vemos
+console.log('Ejecutando con un objeto');
+
 // Creamos un nuevo object
 
 let persona2 = new Object(); // Debe crear un nuevo objeto en memoria
@@ -33,9 +38,15 @@ persona2.direccion = 'Salada 14';
 persona2.telefono = '03030456';
 console.log(persona2.telefono);
 
+// Pongo unos log para diferenciar en consola lo q vemos
+console.log("Creamos un nuevo objeto");
+
 // Como acceder a las propiedades de los object desde otra manera?
 
 console.log(persona['apellido']); // Accedemos como si fuera un Array
+
+// Pongo unos log para diferenciar en consola lo q vemos
+console.log("Cambiamos y eliminamos un error");
 
 // for in
 
@@ -55,3 +66,30 @@ console.log(persona);
 
 persona.apellida = 'benntacud';
 delete persona.apellida; // Elimina lo que por error creamos
+
+// Distintas formas de imprimir un object
+console.log('Distintas formas de imprimir un object');
+
+// Numero 1 : la mas sencilla : concatenar cada valor de cada propiedad
+console.log('forma1');
+
+console.log(persona.nombre + ', ' + persona.apellido);
+
+// Numero 2 : A travez del ciclo for in
+console.log('forma2');
+
+for(nombrePropiedad in perosna){
+    console.log((persona[nombrePropiedad]));
+}
+
+// Numero 3: La funcion Object.values()
+console.log('forma3');
+
+let personaArray = Object.values(persona);
+console.log(personaArray);
+
+// Numero 4: Utilizaremos el metodo JSON.stringify
+console.log('forma4');
+
+let personaString = JSON.stringify(persona);
+console.log(personaString);
