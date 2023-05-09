@@ -44,3 +44,7 @@
 ### En JavaScript, un constructor es una función especial que se utiliza para crear objetos. Los objetos en JavaScript pueden tener propiedades y métodos, y se crean a partir de funciones constructoras utilizando la palabra clave new.
 
 ### Los constructores en JavaScript son útiles cuando se necesitan crear muchos objetos que comparten las mismas propiedades y métodos. Al utilizar una función constructora, se pueden crear objetos de manera eficiente y fácilmente, sin tener que escribir el mismo código repetidamente. Además, los objetos creados a partir de una función constructora pueden ser personalizados con nuevos métodos y propiedades en cualquier momento, lo que los hace muy flexibles y adaptables.
+
+## Sintaxis js 
+
+### Visualizar en el HTML las formas simplidicadas a partir de ------// Numero 8 Distintas formas de crear objetos en contructor
