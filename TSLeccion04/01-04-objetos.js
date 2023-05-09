@@ -176,5 +176,21 @@ console.log(madre.telefono);
 madre.telefono = '745665534534';
 console.log(madre.telefono); // Le cambiamos el nro de telefono a madre
 
+// Numero 9 - USO DE CALL
 
+let persona4 = {
+    nombre: 'Juan',
+    apellido: 'Perez',
+    nombreCompleto2: function (titulo, telefono){
+        return titulo+': '+this.nombre+' '+this.apellido+' '+telefono;
+    }
+}
 
+let persona5 = {
+    nombre: 'Carlos',
+    apellido: 'Lara',
+}
+
+// Creamos 2 metodos en el cual es segundo no le asignamos tantas objetos.. cmo hacemos para agregar MAS=?
+console.log(persona4.nombreCompleto2('Lic.', '6786785'));
+console.log(persona4.nombreCompleto2.call(persona5, 'Ing', '3453466586')); // hay q agregarle argumentos q estan undefined

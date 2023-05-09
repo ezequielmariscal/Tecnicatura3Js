@@ -54,3 +54,7 @@
 ### El prototipo es un mecanismo mediante el cual los objetos pueden heredar propiedades y métodos de otros objetos. Cada objeto en JavaScript tiene un prototipo, que es otro objeto del que el objeto hereda propiedades y métodos.
 
 ### La propiedad prototype se utiliza en las funciones constructoras de JavaScript para definir las propiedades y métodos que deben estar disponibles en los objetos creados a partir de la función constructora.
+
+## Call (method)
+
+### el método call() permite llamar a una función con un objeto específico como el valor de this dentro de la función, y también permite proporcionar argumentos adicionales a la función. Es decir, si a me faltan rellenar algunos object con call puedo llamarlo sin tener que volver a reescribir el codigo
