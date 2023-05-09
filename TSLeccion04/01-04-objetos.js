@@ -183,6 +183,7 @@ let persona4 = {
     apellido: 'Perez',
     nombreCompleto2: function (titulo, telefono){
         return titulo+': '+this.nombre+' '+this.apellido+' '+telefono;
+        //return this.nombre+' '+this.apellido;
     }
 }
 
@@ -192,5 +193,11 @@ let persona5 = {
 }
 
 // Creamos 2 metodos en el cual es segundo no le asignamos tantas objetos.. cmo hacemos para agregar MAS=?
-console.log(persona4.nombreCompleto2('Lic.', '6786785'));
+console.log(persona4.nombreCompleto2('Lic.,', '67967990450'));
 console.log(persona4.nombreCompleto2.call(persona5, 'Ing', '3453466586')); // hay q agregarle argumentos q estan undefined
+
+
+// Numero 10 - Method Apply - nos permite llamar un metodo que puede no estar definido
+let arreglo = ['Ing.', '45658678768978']; // creamos arreglo con 2 argumentosa y se lo vamos pasando
+console.log(persona4.nombreCompleto2.apply(persona5, arreglo)); // nos permite llamar un metodo q no esta definido el metodo para mostrar cierto atributos
+// con apply

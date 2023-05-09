@@ -57,4 +57,12 @@
 
 ## Call (method)
 
-### el método call() permite llamar a una función con un objeto específico como el valor de this dentro de la función, y también permite proporcionar argumentos adicionales a la función. Es decir, si a me faltan rellenar algunos object con call puedo llamarlo sin tener que volver a reescribir el codigo
+### el método call() permite llamar a una función con un objeto específico como el valor de this dentro de la función, y también permite proporcionar argumentos adicionales a la función. Es decir, si a me faltan rellenar algunos argumentos con call puedo llamarlo sin tener que volver a reescribir el codigo
+
+## Appy (method)
+
+### El método apply() es una función integrada en JavaScript que permite llamar a una función con un objeto proporcionado como el valor de this dentro de esa función, y con un conjunto de argumentos proporcionados como un array.
+
+### El método apply() también se puede utilizar para llamar a una función con un array de argumentos dinámico.
+
+### En resumen, el método apply() permite llamar a una función con un objeto específico como el valor de this dentro de la función, y también permite proporcionar un array de argumentos a la función.
