@@ -121,9 +121,14 @@ function persona3(nombre, apellido, email){ // constructor
     this.nombre = nombre;
     this.apellido = apellido;
     this.email = email;
+    this.nombreCompleto = function(){ // insertamos a la fx metodos para imprimir otras var
+        return this.nombre+' '+this.apellido;
+    }
 }
 let padre = new persona3 ('Leo', 'Lopez', 'lopezl@gmail.com');
 console.log(padre);
+console.log(padre.nombreCompleto()); // utilizamos la fx
 
 let madre = new persona3('Laura', 'Contrera', 'contreral@gmail.com');
 console.log(madre);
+console.log(madre.nombreCompleto());
