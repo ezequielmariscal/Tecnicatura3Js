@@ -12,6 +12,9 @@ let persona = {
     edad: 30,
     nombreCompleto: function(){
         return this.nombre+' '+this.apellido; //this apunta al object q se esta trabajando en este momento
+    },
+    get nombreEdad(){
+        return 'El nombre es: '+this.nombre+', Edad: '+this.edad; 
     }
 
 } // se crea un objeto con sus distintas var...
@@ -93,3 +96,8 @@ console.log('forma4');
 
 let personaString = JSON.stringify(persona);
 console.log(personaString);
+
+// Numero 5 : Introduccion al get
+
+console.log('Comenzamos a utilizar el metodo get');
+console.log(persona.nombreEdad);
