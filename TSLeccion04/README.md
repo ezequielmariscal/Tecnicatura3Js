@@ -38,3 +38,9 @@
 ## Metodo SET
 
 ### En JavaScript, el método set se utiliza comúnmente en combinación con los objetos de JavaScript para establecer el valor de una propiedad. Los objetos en JavaScript pueden contener una o varias propiedades, que son pares clave-valor que representan los datos que se almacenan en el objeto.
+
+## Constructor
+
+### En JavaScript, un constructor es una función especial que se utiliza para crear objetos. Los objetos en JavaScript pueden tener propiedades y métodos, y se crean a partir de funciones constructoras utilizando la palabra clave new.
+
+### Los constructores en JavaScript son útiles cuando se necesitan crear muchos objetos que comparten las mismas propiedades y métodos. Al utilizar una función constructora, se pueden crear objetos de manera eficiente y fácilmente, sin tener que escribir el mismo código repetidamente. Además, los objetos creados a partir de una función constructora pueden ser personalizados con nuevos métodos y propiedades en cualquier momento, lo que los hace muy flexibles y adaptables.

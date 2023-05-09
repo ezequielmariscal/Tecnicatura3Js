@@ -114,3 +114,16 @@ console.log(persona.nombreEdad);
 console.log('Comenzamos con el metodo get y set para idiomas');
 persona.lang = 'en';
 console.log(persona.lang); // sin parentesis xq es un get
+
+// Numero 7 : Comenzamos a crear un contructor
+
+function persona3(nombre, apellido, email){ // constructor
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.email = email;
+}
+let padre = new persona3 ('Leo', 'Lopez', 'lopezl@gmail.com');
+console.log(padre);
+
+let madre = new persona3('Laura', 'Contrera', 'contreral@gmail.com');
+console.log(madre);
