@@ -18,8 +18,7 @@
 
 ### El método GET se utiliza comúnmente en combinación con la API Fetch de JavaScript para hacer solicitudes HTTP a un servidor y obtener datos en formato JSON, texto, HTML u otros formatos. Por ejemplo, la siguiente función en JavaScript utiliza el método GET y la API Fetch para obtener datos de una API en línea que devuelve información sobre la cotización de Bitcoin:
 
-javascript
-Copy code
+
 ### function obtenerCotizacionBitcoin() {
 ###  fetch("https://api.coindesk.com/v1/bpi/currentprice.json")
 ###    .then(response => response.json())
@@ -35,3 +34,7 @@ Copy code
 ### En este ejemplo, la función obtenerCotizacionBitcoin() utiliza el método fetch() para hacer una solicitud HTTP de tipo GET a la API de Coindesk, que devuelve información sobre la cotización de Bitcoin en diferentes monedas. Luego, se utiliza el método json() para convertir la respuesta en un objeto JavaScript, y se accede a la propiedad USD.rate para obtener el precio actual de Bitcoin en dólares estadounidenses. Finalmente, se muestra el precio en la consola.
 
 ### Es importante tener en cuenta que el método GET es una forma de hacer solicitudes HTTP seguras, ya que no cambia el estado del servidor ni modifica los datos. Por lo tanto, el método GET se utiliza comúnmente para obtener recursos o datos del servidor, mientras que los métodos POST, PUT y DELETE se utilizan para modificar los datos en el servidor.
+
+## Metodo SET
+
+### En JavaScript, el método set se utiliza comúnmente en combinación con los objetos de JavaScript para establecer el valor de una propiedad. Los objetos en JavaScript pueden contener una o varias propiedades, que son pares clave-valor que representan los datos que se almacenan en el objeto.

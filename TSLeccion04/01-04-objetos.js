@@ -9,12 +9,19 @@ let persona = {
     nombre: 'Carlos',
     apellido: 'Gil',
     email: 'cgil@gmail.com',
-    edad: 30,
+    edad: 28,
+    idioma: 'ES',
     nombreCompleto: function(){
         return this.nombre+' '+this.apellido; //this apunta al object q se esta trabajando en este momento
     },
     get nombreEdad(){
         return 'El nombre es: '+this.nombre+', Edad: '+this.edad; 
+    },
+    get lang(){
+        return this.idioma.toUpperCase(); // Convierte las minusculas a mayus
+    },
+    set lang(lang){
+        this.idioma = lang.toUpperCase();
     }
 
 } // se crea un objeto con sus distintas var...
@@ -81,7 +88,7 @@ console.log(persona.nombre + ', ' + persona.apellido);
 // Numero 2 : A travez del ciclo for in
 console.log('forma2');
 
-for(nombrePropiedad in perosna){
+for(nombrePropiedad in persona){
     console.log((persona[nombrePropiedad]));
 }
 
@@ -97,7 +104,13 @@ console.log('forma4');
 let personaString = JSON.stringify(persona);
 console.log(personaString);
 
-// Numero 5 : Introduccion al get
+// Numero 5 : Introduccion al GET
 
 console.log('Comenzamos a utilizar el metodo get');
 console.log(persona.nombreEdad);
+
+// Numero 6 : Introduccion al metodo SET
+
+console.log('Comenzamos con el metodo get y set para idiomas');
+persona.lang = 'en';
+console.log(persona.lang); // sin parentesis xq es un get
