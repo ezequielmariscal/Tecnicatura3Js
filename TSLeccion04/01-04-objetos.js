@@ -126,11 +126,14 @@ function persona3(nombre, apellido, email){ // constructor
     }
 }
 let padre = new persona3 ('Leo', 'Lopez', 'lopezl@gmail.com');
+padre.nombre = 'Luis'; // modificamos el nombre
+padre.telefono = '5480456984505968'; // agrego un telefono
 console.log(padre);
 console.log(padre.nombreCompleto()); // utilizamos la fx
 
 let madre = new persona3('Laura', 'Contrera', 'contreral@gmail.com');
 console.log(madre);
+console.log(madre.telefono); // me va a dar undefined
 console.log(madre.nombreCompleto());
 
 // Numero 8 Distintas formas de crear objetos en contructor
@@ -165,6 +168,13 @@ let miFuncion1 = new function(){}; // Todo despues de new es considerado objeto
 // caso function 2
 let miFuncion2 = function(){}; // Notacion simplificada y recomendada
 
+// Numero 8 - USO DE PROTOTYPE
+
+persona3.prototype.telefono = '245624654876'
+console.log(padre);
+console.log(madre.telefono);
+madre.telefono = '745665534534';
+console.log(madre.telefono); // Le cambiamos el nro de telefono a madre
 
 
 
