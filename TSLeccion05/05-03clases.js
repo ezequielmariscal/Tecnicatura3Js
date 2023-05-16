@@ -10,10 +10,17 @@ class Persona{
     }
 
     // Add method set
+    set nombre(nombre){
+        this._nombre = nombre;
+    }
 }
 
 let persona1 = new Persona('Martin', 'Fierro');
 console.log(persona1.nombre);
+persona1.nombre = 'Juan Carlos'; // set
+console.log(persona1.nombre);
 //console.log(persona1);
+console.log(persona2.nombre);
+persona2.nombre = 'Maria Laura'; // set
 console.log(persona2.nombre);
 //console.log(persona2);
