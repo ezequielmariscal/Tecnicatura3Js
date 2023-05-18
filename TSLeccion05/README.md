@@ -13,3 +13,37 @@
 # SET
 
 ## El método set en JavaScript se utiliza para agregar un par clave-valor a un objeto. Permite establecer el valor de una propiedad en un objeto utilizando la sintaxis de acceso a propiedades.
+
+
+# Hosting (levantar, pisar, alzar)
+
+## Cuando trabajamos con clases no se aplica el concepto de hosting es decir primero debemos definir nuestra clase si la queremos usar en cambio si trabajamos con funciones podemos 1ro llamar la funcion y luego definir esta funcion.. esto es el concepto de HOSTING.
+
+## El "hosting" en JavaScript se refiere a un comportamiento particular del motor de JavaScript en relación con la declaración de variables y funciones. En términos simples, el hosting implica que las declaraciones de variables y funciones se mueven automáticamente al principio de su ámbito de alcance durante la fase de compilación del código, antes de que se ejecute.
+
+## El hosting puede llevar a resultados inesperados si no se comprende correctamente. A continuación, te explico cómo funciona el hosting en diferentes casos:
+
+## Hosting de variables:
+
+
+## console.log(nombre); // undefined
+## var nombre = 'Juan';
+## console.log(nombre); // Juan
+
+
+## En este caso, la declaración de la variable nombre se mueve al principio del ámbito de alcance (ya sea el ámbito global o el ámbito de una función). Sin embargo, su asignación (nombre = 'Juan') se mantiene en su posición original. Durante la primera impresión, la variable nombre se declara pero aún no se ha asignado ningún valor, por lo que su valor es undefined. En la segunda impresión, después de la asignación, el valor de nombre es 'Juan'.
+
+## Hosting de funciones:
+
+
+# saludar(); // Hola
+
+## function saludar() {
+  ## console.log('Hola');
+## }
+
+## En este caso, la declaración de la función saludar se mueve al principio del ámbito de alcance. Por lo tanto, se puede llamar a la función antes de que se haya declarado formalmente en el código.
+
+## Es importante tener en cuenta que el hosting solo ocurre con las declaraciones (var y function), no con las asignaciones o expresiones. Además, el hosting de variables y funciones se aplica de manera diferente dependiendo de si se encuentra en el ámbito global o en el ámbito de una función.
+
+## Para evitar confusiones y mantener un código más claro y legible, se recomienda declarar todas las variables y funciones al principio del ámbito de alcance y asignar valores o llamar a las funciones en el orden deseado. Esto ayuda a evitar errores sutiles y a mejorar la comprensión del código por parte de otros desarrolladores.

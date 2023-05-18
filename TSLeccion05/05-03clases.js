@@ -1,3 +1,5 @@
+// let persona4 = new Persona('Brad','Pitt'); // nos dira que no funciona es un  hosting
+
 class Persona{
     constructor(nombre, apellido){
         this._nombre = nombre;
@@ -42,3 +44,8 @@ let persona3 = new Persona('Pepe, Argento');
 console.log(persona3.apellido);
 persona3.apellido = ('Mujica');
 console.log(persona3.apellido);
+
+// Hosting
+
+// ver 1 nos da undefined en js no se aplica el concepto de hosting no se puede crear objetos sin definir
+// la clase.
