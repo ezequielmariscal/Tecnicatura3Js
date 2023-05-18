@@ -1,6 +1,6 @@
 // let persona4 = new Persona('Brad','Pitt'); // nos dira que no funciona es un  hosting
 
-class Persona{
+class Persona{ //clase padre
     constructor(nombre, apellido){
         this._nombre = nombre;
         this._apellido = apellido;
@@ -49,3 +49,20 @@ console.log(persona3.apellido);
 
 // ver 1 nos da undefined en js no se aplica el concepto de hosting no se puede crear objetos sin definir
 // la clase.
+
+// Herencia (padre se encuentra en sec 3)
+
+// Creamos la clase hija
+class Empleado extends Persona{
+    constructor(departamento){
+        this._departamento = departamento;
+    }
+
+    get departamento(){
+        this._departamento;
+    }
+
+    set departamento(departamento){
+        this._departamento = departamento;
+    }
+}
