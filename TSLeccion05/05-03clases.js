@@ -54,7 +54,8 @@ console.log(persona3.apellido);
 
 // Creamos la clase hija
 class Empleado extends Persona{
-    constructor(departamento){
+    constructor(nombre, apellido, departamento){
+        super(nombre, apellido); // llamamos al padre
         this._departamento = departamento;
     }
 
@@ -66,3 +67,7 @@ class Empleado extends Persona{
         this._departamento = departamento;
     }
 }
+
+let empleado = new Empleado('Mona', 'Gimenez', 'Cuarteto');
+console.log(empleado1);
+console.log(empleado1.nombre);
