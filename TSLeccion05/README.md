@@ -26,9 +26,9 @@
 ## Hosting de variables:
 
 
-## console.log(nombre); // undefined
-## var nombre = 'Juan';
-## console.log(nombre); // Juan
+### console.log(nombre); // undefined
+### var nombre = 'Juan';
+### console.log(nombre); // Juan
 
 
 ## En este caso, la declaración de la variable nombre se mueve al principio del ámbito de alcance (ya sea el ámbito global o el ámbito de una función). Sin embargo, su asignación (nombre = 'Juan') se mantiene en su posición original. Durante la primera impresión, la variable nombre se declara pero aún no se ha asignado ningún valor, por lo que su valor es undefined. En la segunda impresión, después de la asignación, el valor de nombre es 'Juan'.
@@ -36,11 +36,11 @@
 ## Hosting de funciones:
 
 
-# saludar(); // Hola
+## saludar(); // Hola
 
-## function saludar() {
-  ## console.log('Hola');
-## }
+### function saludar() {
+  ### console.log('Hola');
+### }
 
 ## En este caso, la declaración de la función saludar se mueve al principio del ámbito de alcance. Por lo tanto, se puede llamar a la función antes de que se haya declarado formalmente en el código.
 
