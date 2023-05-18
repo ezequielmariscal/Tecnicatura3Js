@@ -50,4 +50,4 @@
 
 # Herencia
 
-## 
+## En JavaScript, cuando utilizas la sintaxis de clases introducida en ECMAScript 2015 (ES6) para implementar la herencia, puedes utilizar la palabra clave super para llamar al constructor y a los métodos del padre desde el hijo. La palabra clave super se utiliza para acceder a la funcionalidad del objeto padre en el contexto del hijo.
