@@ -36,7 +36,7 @@
 ## Hosting de funciones:
 
 
-## saludar(); // Hola
+### saludar(); // Hola
 
 ### function saludar() {
   ### console.log('Hola');
@@ -47,3 +47,7 @@
 ## Es importante tener en cuenta que el hosting solo ocurre con las declaraciones (var y function), no con las asignaciones o expresiones. Además, el hosting de variables y funciones se aplica de manera diferente dependiendo de si se encuentra en el ámbito global o en el ámbito de una función.
 
 ## Para evitar confusiones y mantener un código más claro y legible, se recomienda declarar todas las variables y funciones al principio del ámbito de alcance y asignar valores o llamar a las funciones en el orden deseado. Esto ayuda a evitar errores sutiles y a mejorar la comprensión del código por parte de otros desarrolladores.
+
+# Herencia
+
+## 
