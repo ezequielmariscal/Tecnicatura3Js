@@ -74,7 +74,7 @@ class Empleado extends Persona{
 
     //Sobreescritura: modificar el comportamiento definido en algun clase padre
     nombreCompleto(){
-        return this._nombre+' '+this._departamento;
+        return super.nombreCompleto()+' '+this._departamento;
     }
 }
 
@@ -82,7 +82,7 @@ let empleado = new Empleado('Mona', 'Gimenez', 'Cuarteto');
 console.log(empleado1);
 console.log(empleado1.nombre);
 
-// Add metodo de nombreCompleto
+// Add metodo de nombreCompleto y despues sobreescribir el codigo
 console.log(empleado.nombreCompleto());
 
 
