@@ -55,3 +55,9 @@
 # Sobreescritura: 
 
 ## modificar el comportamiento definido en algun clase padre
+
+# Clase Object
+
+## Es la clase padre en js no hace falta agregar un extends object como en java. La clase object posee varios metodos adentro:
+
+### - Metodo toString => nos permite imprimir informacion del estado del objeto, es decir, los valores actuales de cada uno de los atributos de nuestro objeto. Sin embargo cuando trabajamos con object tiene metodosos que son directo de object. por ej: prototype(add atibutos de manera dinamica a nuestra clase)

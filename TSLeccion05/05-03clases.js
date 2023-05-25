@@ -85,4 +85,6 @@ console.log(empleado1.nombre);
 // Add metodo de nombreCompleto y despues sobreescribir el codigo
 console.log(empleado.nombreCompleto());
 
+// Object.prototype.toString Esta es la manera de acceder a atriburos y metodos de manera dinamica
+
 
