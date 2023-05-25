@@ -71,11 +71,18 @@ class Empleado extends Persona{
     set departamento(departamento){
         this._departamento = departamento;
     }
+
+    //Sobreescritura: modificar el comportamiento definido en algun clase padre
+    nombreCompleto(){
+        return this._nombre+' '+this._departamento;
+    }
 }
 
 let empleado = new Empleado('Mona', 'Gimenez', 'Cuarteto');
 console.log(empleado1);
 console.log(empleado1.nombre);
 
+// Add metodo de nombreCompleto
 console.log(empleado.nombreCompleto());
+
 
