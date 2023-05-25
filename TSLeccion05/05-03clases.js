@@ -24,6 +24,11 @@ class Persona{ //clase padre
      set apellido(apellido){
         this._apellido = apellido;
     }
+
+    // Add metodo para imprimir nombre completo
+    nombreCompleto(){
+        return this._nombre+' '+this._apellido;
+    }
 }
 
 let persona1 = new Persona('Martin', 'Fierro');
@@ -71,3 +76,6 @@ class Empleado extends Persona{
 let empleado = new Empleado('Mona', 'Gimenez', 'Cuarteto');
 console.log(empleado1);
 console.log(empleado1.nombre);
+
+console.log(empleado.nombreCompleto());
+
