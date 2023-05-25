@@ -76,6 +76,10 @@ class Empleado extends Persona{
     nombreCompleto(){
         return super.nombreCompleto()+' '+this._departamento;
     }
+
+    toString() { // Regresa un String
+        return this.nombreCompleto();
+    }
 }
 
 let empleado = new Empleado('Mona', 'Gimenez', 'Cuarteto');
@@ -86,5 +90,9 @@ console.log(empleado1.nombre);
 console.log(empleado.nombreCompleto());
 
 // Object.prototype.toString Esta es la manera de acceder a atriburos y metodos de manera dinamica
+console.log(empleado1.toString());
+
+// Polimorfismo: 
+
 
 
