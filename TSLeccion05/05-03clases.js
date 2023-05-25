@@ -77,7 +77,10 @@ class Empleado extends Persona{
         return super.nombreCompleto()+' '+this._departamento;
     }
 
+    // Sobreescribiendo el metodo de la clase padre (Object)
     toString() { // Regresa un String
+        // Se aplica polimorfimos que significa multiples formas en tiempo de ejecucion
+        // El metodo que se ejecuta depende del objeto si es una referencia de tipo padre o hija
         return this.nombreCompleto();
     }
 }
@@ -92,7 +95,7 @@ console.log(empleado.nombreCompleto());
 // Object.prototype.toString Esta es la manera de acceder a atriburos y metodos de manera dinamica
 console.log(empleado1.toString());
 
-// Polimorfismo: 
-
+// Polimorfismo: multiples formas en tiempo de ejecucion
+console.log(persona1.toString());
 
 
