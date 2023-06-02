@@ -83,6 +83,13 @@ class Empleado extends Persona{
         // El metodo que se ejecuta depende del objeto si es una referencia de tipo padre o hija
         return this.nombreCompleto();
     }
+
+    static saludar(){
+        console.log('Saludos desde este metodo statis');
+    }
+    static saludar2(persona){
+        console.log(persona.nombre);
+    }
 }
 
 let empleado = new Empleado('Mona', 'Gimenez', 'Cuarteto');
@@ -98,4 +105,8 @@ console.log(empleado1.toString());
 // Polimorfismo: multiples formas en tiempo de ejecucion
 console.log(persona1.toString());
 
+// Llamo al metodo estatico creados
+// persona1.saludar(); no se utiliza desde el objeto
+Persona.saludar();
+Persona.saludar2(persona1);
 
