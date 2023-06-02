@@ -1,9 +1,14 @@
 // let persona4 = new Persona('Brad','Pitt'); // nos dira que no funciona es un  hosting
 
 class Persona{ //clase padre
+
+    static contadorObjetosPersona = 0;
+
     constructor(nombre, apellido){
         this._nombre = nombre;
         this._apellido = apellido;
+        Persona.contadorObjetosPersona++;
+        console.log('Se incrementa el contador: '+Persona.contadorObjetosPersona);
     }
 
     // Add method get (Los atributos no pueden llamarse igual cuando creamos metodo get y set)
@@ -113,3 +118,7 @@ Persona.saludar2(persona1);
 
 Empleado.saludar();
 Empleado-saludar2(empleado1);
+
+//console.log(persona1.contadorObjetosPersona);
+console.log(Persona.contadorObjetosPersona); // accedemos desde la clase padre
+console.log(Empleado.contadorObjetosPersona); // Accedemos a la clase hija que hereda los atrib.
