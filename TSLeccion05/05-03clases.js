@@ -88,7 +88,7 @@ class Empleado extends Persona{
         console.log('Saludos desde este metodo statis');
     }
     static saludar2(persona){
-        console.log(persona.nombre);
+        console.log(persona.nombre+' '+persona.apellido);
     }
 }
 
@@ -105,8 +105,11 @@ console.log(empleado1.toString());
 // Polimorfismo: multiples formas en tiempo de ejecucion
 console.log(persona1.toString());
 
+// clase 7 static:
 // Llamo al metodo estatico creados
 // persona1.saludar(); no se utiliza desde el objeto
 Persona.saludar();
 Persona.saludar2(persona1);
 
+Empleado.saludar();
+Empleado-saludar2(empleado1);
