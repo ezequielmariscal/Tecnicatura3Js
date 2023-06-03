@@ -61,3 +61,9 @@
 ## Es la clase padre en js no hace falta agregar un extends object como en java. La clase object posee varios metodos adentro:
 
 ### - Metodo toString => nos permite imprimir informacion del estado del objeto, es decir, los valores actuales de cada uno de los atributos de nuestro objeto. Sin embargo cuando trabajamos con object tiene metodosos que son directo de object. por ej: prototype(add atibutos de manera dinamica a nuestra clase)
+
+## Atributos static
+
+# En JavaScript, los atributos estáticos son propiedades que pertenecen a la clase en sí misma, en lugar de pertenecer a las instancias individuales de la clase. Esto significa que los atributos estáticos se comparten entre todas las instancias de la clase y se accede a ellos utilizando el nombre de la clase en lugar de una instancia específica.
+
+# Para definir un atributo estático en una clase de JavaScript, se utiliza la palabra clave static antes del nombre del atributo.
