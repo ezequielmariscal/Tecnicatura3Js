@@ -2,7 +2,8 @@
 
 class Persona{ //clase padre
 
-    static contadorObjetosPersona = 0;
+    static contadorObjetosPersona = 0; // Atributo estatico
+    email= 'Valor default email'; // Atributo no estatico
 
     constructor(nombre, apellido){
         this._nombre = nombre;
@@ -122,3 +123,10 @@ Empleado-saludar2(empleado1);
 //console.log(persona1.contadorObjetosPersona);
 console.log(Persona.contadorObjetosPersona); // accedemos desde la clase padre
 console.log(Empleado.contadorObjetosPersona); // Accedemos a la clase hija que hereda los atrib.
+
+// Colocamos atributo no estatico .. se asocia a los objetos directamente
+console.log(persona1.email);
+// tamnien se puede acceder por herencia? si
+console.log(empleado1.email);
+// Se puede acceder desde la clase ?? no, no se puede
+//console.log(Persona.email);
