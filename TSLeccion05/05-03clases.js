@@ -2,14 +2,15 @@
 
 class Persona{ //clase padre
 
-    static contadorObjetosPersona = 0; // Atributo estatico
-    email= 'Valor default email'; // Atributo no estatico
+    static contadorPersonas = 0; // Atributo estatico
+    //email= 'Valor default email'; // Atributo no estatico
 
     constructor(nombre, apellido){
         this._nombre = nombre;
         this._apellido = apellido;
-        Persona.contadorObjetosPersona++;
-        console.log('Se incrementa el contador: '+Persona.contadorObjetosPersona);
+        this.idPersona = Persona.contadorObjetosPersona++;
+        //console.log('Se incrementa el contador: '+Persona.contadorObjetosPersona);
+        
     }
 
     // Add method get (Los atributos no pueden llamarse igual cuando creamos metodo get y set)
@@ -33,7 +34,7 @@ class Persona{ //clase padre
 
     // Add metodo para imprimir nombre completo
     nombreCompleto(){
-        return this._nombre+' '+this._apellido;
+        return this.idPersona+' '+this._nombre+' '+this._apellido;
     }
 }
 
@@ -130,3 +131,8 @@ console.log(persona1.email);
 console.log(empleado1.email);
 // Se puede acceder desde la clase ?? no, no se puede
 //console.log(Persona.email);
+
+console.log(persona1.toString());
+console.log(persona2.toString());
+console.log(empleado1.toString());
+console.log(Persona.contadorPersonas);
