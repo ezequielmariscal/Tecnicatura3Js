@@ -64,6 +64,12 @@
 
 ## Atributos static
 
-# En JavaScript, los atributos estáticos son propiedades que pertenecen a la clase en sí misma, en lugar de pertenecer a las instancias individuales de la clase. Esto significa que los atributos estáticos se comparten entre todas las instancias de la clase y se accede a ellos utilizando el nombre de la clase en lugar de una instancia específica.
+### En JavaScript, los atributos estáticos son propiedades que pertenecen a la clase en sí misma, en lugar de pertenecer a las instancias individuales de la clase. Esto significa que los atributos estáticos se comparten entre todas las instancias de la clase y se accede a ellos utilizando el nombre de la clase en lugar de una instancia específica.
 
-# Para definir un atributo estático en una clase de JavaScript, se utiliza la palabra clave static antes del nombre del atributo.
+### Para definir un atributo estático en una clase de JavaScript, se utiliza la palabra clave static antes del nombre del atributo.
+
+## Atributos noStatic
+
+### En JavaScript, los atributos no estáticos se refieren a las propiedades que pertenecen a cada instancia individual de una clase. Estos atributos son únicos para cada instancia y se definen sin el uso de la palabra clave static.
+
+### Los atributos no estáticos son útiles cuando se necesita almacenar y acceder a datos específicos de cada instancia de una clase. Cada instancia puede tener diferentes valores para estos atributos y métodos no estáticos.
