@@ -5,10 +5,19 @@ class Persona{ //clase padre
     static contadorPersonas = 0; // Atributo estatico
     //email= 'Valor default email'; // Atributo no estatico
 
+    static get MAX_OBJ(){ // en mayus se definen las constante.. éte metodo simula una constante
+        return5;
+    }
+
     constructor(nombre, apellido){
         this._nombre = nombre;
         this._apellido = apellido;
-        this.idPersona = Persona.contadorObjetosPersona++;
+        if(Persona.contadorPersonas < Persona.MAX_OBJ){
+            this.idPersona = Persona.contadorObjetosPersona++;
+        }else{
+            console.log('Se ha superado el maximo de objetos permitidos');
+        }
+        
         //console.log('Se incrementa el contador: '+Persona.contadorObjetosPersona);
         
     }
@@ -139,3 +148,6 @@ console.log(Persona.contadorPersonas);
 let persona3 = new Persona('Carla', 'Pertosi');
 console.log(persona3.toString());
 console.log(Persona.contadorPersonas); // aca podemos ver el uso de la palabra static 
+
+console.log(Persona.MAX_OBJ);
+// Persona.MAX_OBJ = 10; // No se puede modificar, ni alterar
