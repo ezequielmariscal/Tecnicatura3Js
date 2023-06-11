@@ -11,4 +11,10 @@ class Empleado extends Persona{
     get idEmpleado(){
         return this._idEmpleado;
     }
+    get sueldo(){
+        this._sueldo;
+    }
+    set sueldo(sueldo){
+        this._sueldo = sueldo;
+    }
 }
