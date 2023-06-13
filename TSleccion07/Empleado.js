@@ -18,6 +18,13 @@ class Empleado extends Persona{
         this._sueldo = sueldo;
     }
 
+    toString(){
+        return `
+        ${super.toString()} 
+        ${this._idEmpleado} 
+        ${this._sueldo}`;
+    }
+
 
     
 }
