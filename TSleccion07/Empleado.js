@@ -17,4 +17,7 @@ class Empleado extends Persona{
     set sueldo(sueldo){
         this._sueldo = sueldo;
     }
+
+
+    
 }
