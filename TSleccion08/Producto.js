@@ -10,4 +10,5 @@ class Producto extends Orden{
 
     idProducto = int;
     nombre = String;
+    precio = int;
 }
