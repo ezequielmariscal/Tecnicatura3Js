@@ -1,5 +1,6 @@
 
-let Producto1 = new Producto(Camisa, 3000);
+let producto1 = new Producto('Pantalon', 200);
+let producto2 = new Producto('Camisa', 150);
 
-console.log(Producto1.nombre);
-console.log(Producto1.precio);
+console.log(producto1.toString());
+console.log(producto1.toString());
