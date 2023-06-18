@@ -17,18 +17,26 @@ class Orden{
         return this._idOrden
     }
 
-    agregarProducto(Producto){
+    agregarProducto(producto){
         if(this._productos.length < Orden.MAX_PRODUCTO){
-            this._productos.push(Producto); // Tnemos 2 tipos de sintaxis : 1
+            this._productos.push(producto); // Tnemos 2 tipos de sintaxis : 1
             //this._productos[this._contadorProductosAgregado++] = Producto; ----SINTAXIS 2
         }else{
             console.log('No se pueden agregar mas productos');
         }
     }// Fin del m,etodo agregarProducrto
     CalcularTotal(){
-        Producto = id_Producto;
-    };
+        let totalVenta = 0;
+        for (let producto of this._productos) {
+            totalVenta += producto.precio;
+        } //fin ciclo for
+        return totalVenta;
+    }// Fin method calculo total
     mostrarOrden(){
-
-    };
+        let productoOrden = ' ';
+        for(let producto of this._productos);{
+            productoOrden += producto.toString()+ ' ';
+        }// fin del ciclo for
+        console.log(`Orden: ${this._idOrden}, Total: $${this.CalcularTotal()}, Productos: ${productoOrden}`);
+    };// Fin method mostraOrden
 } // Fin de la clase orden
