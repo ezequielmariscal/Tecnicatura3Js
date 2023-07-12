@@ -2,7 +2,7 @@ class Orden{
 
     static contadorOrdenes = 0;
 
-    static get MAX_PRODUCTO(){
+    static get MAX_PRODUCTO(){ // Simula una constante
         return 5;
     }
 
